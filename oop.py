@@ -1,14 +1,11 @@
 #!/usr/bin/python3
 
 class student:
-    pass
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
 
-student1 = student() #instantiation of an object
-student1.name = "james"
-student1.age = 22
-
-
-print (type(student1))
-print (type(student1.name))
-print (type(student1.age))
+student1 = student("james", 22) #instantiation of an object
+print(student1)
+print(student1.name, student1.age)
